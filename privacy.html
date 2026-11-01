@@ -4,18 +4,45 @@
 <style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:3rem auto;padding:0 1rem;line-height:1.6;color:#222}a{color:#0b5cad}</style></head>
 <body>
 <h1>Privacy Policy</h1>
-<p><strong>Owl CalSync by Systems Owl Inc.</strong> &middot; Last updated: October 29, 2026</p>
-<h2>What we access</h2>
-<p>When you connect your Microsoft 365 and/or Google accounts, Owl CalSync accesses your calendar events only to sync them between your own connected calendars, according to the sync rules you create.</p>
-<h2>How we store it</h2>
-<p>OAuth tokens are stored encrypted. We keep only the data needed to run your sync rules, such as event identifiers that prevent duplicates.</p>
+<p><strong>Owl CalSync by Systems Owl Inc.</strong> &middot; Last updated: November 1, 2026</p>
+<p>Owl CalSync ("the app", "we") is operated by Systems Owl Inc., Lyons Brook, Nova Scotia, Canada. Contact: <a href="mailto:help@systemsowl.com">help@systemsowl.com</a>.</p>
+
+<h2>What the app does</h2>
+<p>Owl CalSync copies calendar events one way between calendars you own, according to sync rules you create, so your availability is visible in both your Microsoft 365 and your Google calendar.</p>
+
+<h2>Google user data we access</h2>
+<ul>
+<li><strong>Google account identity</strong> (OpenID, email, profile): your Google account ID, email address and name, to show which account is connected.</li>
+<li><strong>Your Google Calendar list</strong> (calendar.calendarlist.readonly): the names and IDs of your calendars, so you can pick which calendar a rule uses.</li>
+<li><strong>Your Google Calendar events</strong> (calendar.events.owned): event details such as title, start and end times, time zone, location, description, attendee names and email addresses, visibility and recurrence, on the calendars you select in a rule. We read events when a Google calendar is a rule's source, and we create, update and delete only the copies the app created when it is a rule's target.</li>
+</ul>
+<p>We request the narrowest Google permissions that make this work. We never send invitations or emails to event attendees.</p>
+
+<h2>How we use it</h2>
+<p>We use this data only to provide and operate the sync feature that you see and control in the app: to detect new, changed and deleted events, to write the matching copies, and to prevent duplicates. When a rule copies events between Google and Microsoft 365, the event details are written to the other calendar you connected (your own Microsoft 365 or Google calendar).</p>
+
+<h2>What we store, where, and for how long</h2>
+<ul>
+<li><strong>OAuth tokens</strong> are stored encrypted (AES-256-GCM). Data is protected in transit with HTTPS/TLS.</li>
+<li><strong>Sync records</strong>: event identifiers that link each copy to its source (to avoid duplicates), your rules, and a run history that includes event titles for troubleshooting. Run history is limited to the most recent 200 runs per rule.</li>
+<li>Data is stored on servers operated by Systems Owl Inc.</li>
+<li>Data is kept while your account is connected. When you disconnect an account in the app, we revoke our access with Google and delete that account's stored tokens (an account used by a rule can be disconnected after that rule is deleted, which removes the rule's sync records). You can also ask us to delete everything at <a href="mailto:help@systemsowl.com">help@systemsowl.com</a>; we respond promptly.</li>
+</ul>
+
 <h2>Sharing</h2>
-<p>We do not sell your data and we do not share it with third parties. We do not use it for advertising or to train AI or machine-learning models.</p>
-<h2>Deletion</h2>
-<p>You can disconnect an account at any time, and we will delete your stored tokens and sync data on request. Email <a href="mailto:help@systemsowl.com">help@systemsowl.com</a>. You can also revoke access in your Google or Microsoft account settings.</p>
+<p>We do not sell Google user data. We do not share it with third parties, except (a) with the Microsoft 365 or Google account that you yourself connected as the target of a rule, (b) as necessary for security or abuse investigation, (c) to comply with law, or (d) in a merger or sale of assets after your explicit consent. We do not use it for advertising, personalized or interest-based ads, credit decisions, or to train AI or machine-learning models.</p>
+
+<h2>Human access</h2>
+<p>People at Systems Owl Inc. do not read your calendar data unless you give your affirmative agreement for specific data, it is necessary for security purposes (for example, investigating abuse or a bug), or it is required by law. Aggregated and anonymized operational metrics (for example, number of runs) may be used internally.</p>
+
+<h2>Your choices</h2>
+<p>You can disconnect any account in the app at any time. You can revoke Owl CalSync's access in your Google Account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (or Microsoft account settings). Revoking access stops syncing immediately. Copies already written to your calendars remain until you delete them.</p>
+
 <h2>Google API Services User Data Policy</h2>
 <p>Owl CalSync's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<h2>Contact</h2>
-<p>Systems Owl Inc. &middot; <a href="mailto:help@systemsowl.com">help@systemsowl.com</a></p>
+
+<h2>Changes and contact</h2>
+<p>We will post changes on this page and update the date above. Questions or deletion requests: <a href="mailto:help@systemsowl.com">help@systemsowl.com</a>. Systems Owl Inc., 2893 Highway 376, Lyons Brook, NS B0K 1H0, Canada.</p>
 <p><a href="/">Back to home</a></p>
-</body></html>
+</body>
+</html>
